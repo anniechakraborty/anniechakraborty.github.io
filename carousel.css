@@ -1,0 +1,255 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(245, 245, 245);
+  background-color: #222;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-inner{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+}
+
+/* ANIMATING THE BACKGROUND OF THE SECOND SLIDE IN THE CAROUSEL */
+
+#one{
+  height: 100%;
+  width: 100%;
+  background-image: url("imgs/bg.png");
+  background-position: 0 0;   /* image position is top left */
+  animation: animated-pattern 15s linear infinite;
+  color: aliceblue;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5em;
+}
+@keyframes animated-pattern{
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 660px;
+  }
+}
+
+/* ANIMATING THE TEXT IN THE FIRST SLIDE OF TEH CAROUSEL */
+#smoky {
+	margin: 0;
+	padding: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 10em;
+}
+
+.lead-text {
+	list-style: none;
+	color: white;
+	font-size: 100px;
+	font-weight: bold;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+	transition: 2s;
+}
+
+#smoky:hover .lead-text {
+	transform: rotate(45deg) translateY(-200px);	/* moves the text upwards and rotates it by 45 deg*/
+	opacity: 0;
+	filter: blur(20px);
+}
+
+#smoky .lead-text:nth-child(1) {
+	transition-delay: 0;
+}
+
+#smoky .lead-text:nth-child(2) {
+	transition-delay: 0.4s;
+}
+
+#smoky .lead-text:nth-child(3) {
+	transition-delay: 0.8s;
+}
+
+#smoky .lead-text:nth-child(4) {
+	transition-delay: 1.2s;
+}
+
+#smoky .lead-text:nth-child(5) {
+	transition-delay: 1.2s;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.rounded {
+  border-radius: 50%!important;
+}
+
+/* ----------ANIMATING THE BUTTONS IN MARKETING---------- */
+.button-animate1{
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  border: 2px solid rgb(41, 156, 47);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  position: relative;
+  /* overflow: hidden; */
+  transition: 1s;
+}
+
+.button-animate1::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(41, 156, 47);
+  height: 100%;   /*takes up the entire height of the link*/
+  width: 100%;   /*takes up the entire width of the link*/
+  transition: 1s;
+  z-index: -1;
+  transform: rotateX(90deg);
+}
+
+.button-animate1:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(41, 156, 47);
+  height: 100%;   /*takes up the entire height of the link*/
+  width: 100%;   /*takes up the entire width of the link*/
+  transition: 1s;
+  z-index: -1;
+  transform: rotateY(90deg);  
+}
+.button-animate1:hover:before{
+  transform: rotateX(0deg);
+}
+.button-animate1:hover:after{
+  transform: rotateY(0deg);
+}
+.button-animate1:hover{
+  color: aliceblue;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  background-color: rgb(56, 67, 73);
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* ANIMATING THE IMAGES */
+
+  .feature-container{
+    overflow: hidden;
+  }
+ .animate-image{
+   position: relative;
+   transition: 1s;
+   border-radius: 0.25em;
+ }
+ .figure-caption{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: whitesmoke;
+   background-color: rgba(0, 0, 0, 0);
+   opacity: 0;
+   transition: all 0.7s;
+ }
+ .figure-caption h3{
+   text-transform: uppercase;
+   width: 70%;
+   margin: 0;
+ }
+ .figure-caption p{
+   width: 70%;
+   text-transform: capitalize;
+   font-size: 0.5em;
+ }
+ .feature-container:hover .figure-caption{
+   opacity: 1;
+   background-color: rgba(0, 0, 0, 0.45);
+ }
+ .feature-container:hover .animate-image{
+   transform: scale(1.3);
+ }
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
