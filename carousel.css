@@ -8,6 +8,10 @@ body {
   color: rgb(245, 245, 245);
   background-color: #222;
 }
+/* Adding a box shadow to the navbar */
+nav{
+  box-shadow: 3px 3px 6px 6px rgba(15, 15, 15, 0.4);
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
