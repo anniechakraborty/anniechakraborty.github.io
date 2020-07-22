@@ -1,6 +1,32 @@
+:root {
+    --mainText: black;
+    --secondaryText: #4b5156;
+    --mainColor: #eaeaea;
+    --secondaryColor: #fff;
+    --borderColor: #c1c1c1;
+}
+
+html,
 body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: rgb(245, 245, 245);
-    background-color: #222;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: var(--mainText);
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+    color: var(--secondaryText);
 }
