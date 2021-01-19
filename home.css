@@ -1,0 +1,145 @@
+/* nav bar shadow */
+
+.navbar {
+    -webkit-box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/* Main section */
+
+main {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+#clipped {
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    clip-path: circle(60.4% at 32% 34%);
+}
+
+#intro-text {
+    animation: load-up 700ms ease-out;
+}
+
+@keyframes load-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 320px) {
+    #intro-text h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 1204px) {
+    #intro-text h1 {
+        font-size: 150px;
+    }
+}
+
+#intro-text p {
+    text-transform: uppercase;
+    font-family: 'Comfortaa';
+    letter-spacing: 4px;
+}
+
+
+/* Styles for the terminal */
+
+#bar {
+    text-align: center;
+    width: 750px;
+    height: 25px;
+    background-color: #DAD9D9;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    border-radius: 5px;
+}
+
+#red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -47%;
+    bottom: -20%;
+    position: relative;
+}
+
+#yellow {
+    background-color: #f0f000;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -44%;
+    bottom: 40%;
+    position: relative;
+    display: block;
+}
+
+#green {
+    background-color: #1AAF5C;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -41%;
+    bottom: 99%;
+    position: relative;
+    display: block;
+}
+
+#screen {
+    background-color: #222;
+    width: 550px;
+    height: 380px;
+    border-radius: 2%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.terminal-font {
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: left;
+    position: static;
+}
+
+div #terminal {
+    transform: rotate(-15deg);
+    -webkit-box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    animation: load-right 700ms ease-in;
+}
+
+@keyframes load-right {
+    0% {
+        transform: translateX(100%) rotate(-15deg);
+    }
+    100% {
+        transform: translateX(0) rotate(-15deg);
+    }
+}
+
+
+/* Cursor */
+
+.generate>.txt {
+    border-right: 0.2rem solid #777;
+}
