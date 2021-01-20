@@ -21,14 +21,11 @@
     <title>Annie</title>
 </head>
 
-<body class="bg-video-container">
-    <video loop muted autoplay poster="img/videoframe.jpg" class="bg-video">        
-        <source src="imgs/balls-bounce.mp4" type="video/mp4">        
-    </video>
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Annie</a>
+                <a class="navbar-brand" href="index.html">Annie</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,7 +41,7 @@
                             <a class="nav-link " aria-current="page" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Contact</a>
+                            <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <li class="d-flex">
@@ -54,19 +51,100 @@
             </div>
         </nav>
     </header>
-
+    <div id="background-image"></div>
     <main id="about" class=" d-flex align-items-center justify-content-center ">
         <div class="container">
-            <h1>about.</h1>
-            <p>
-                I am Annie Chakraborty. I am a undergraduate in St. Xavier’s College Kolkata (India) and I am currently pursuing a BSc degree in Computer Science. I love coding and learning new skills. Currently I am perfecting mobile UI designs using the Flutter framework
-                by Google and building websites with WordPress. I’m enthusiastic about web design and I have done a couple of small projects in front end development.
-            </p>
-            <p>
-                My hobbies include reading and writing. I enjoy reading books and I am a huge Christie fan. In books my favourite genre includes Thrillers, Detective books, Mythological fiction, Personality development books among many others. I also enjoy classical
-                music and Rabindra Sangeet. On weekends I teach school students Mathematics online. I am also planning on making a tutorial on the same covering all the basic mathematical concepts required in high school. In my free time I run a book
-                blog and a podcast on books and Netflix recommendations. I also enjoy swimming, travelling and meeting new people. In a nutshell, I am a hard working individual who loves to learn new stuff, work on them and share my knowledge with others.
-            </p>
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <h1 id="heading">about me.</h1>
+                </div>
+                <div class="col-md-9">
+                    <p class="my-4 introduction">
+                        I am Annie Chakraborty. I am a undergraduate in St. Xavier’s College Kolkata (India) and I am currently pursuing a BSc degree in Computer Science. I love coding and learning new skills. Currently I am perfecting mobile UI designs using the Flutter framework
+                        by Google and building websites with WordPress. I’m enthusiastic about web design and I have done a couple of small projects in front end development.
+                    </p>
+                    <p class="my-4 introduction">
+                        My hobbies include reading and writing. I enjoy reading books and I am a huge Christie fan. In books my favourite genre includes Thrillers, Detective books, Mythological fiction, Personality development books among many others. I also enjoy classical
+                        music and Rabindra Sangeet. On weekends I teach school students Mathematics online. I am also planning on making a tutorial on the same covering all the basic mathematical concepts required in high school. In my free time I run
+                        a book blog and a podcast on books and Netflix recommendations. I also enjoy swimming, travelling and meeting new people. In a nutshell, I am a hard working individual who loves to learn new stuff, work on them and share my knowledge
+                        with others.
+                    </p>
+                </div>
+            </div>
+            <!-- education details -->
+            <div class="row">
+                <h2>education</h2>
+                <div class="col-md-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://d2jg2pri5bpndu.cloudfront.net/schools/covers/870_St.-Xavier's-College-Park-Street-.png" class="card-img-top" alt="image of St. Xavier's College Kolkata">
+                        <div class="card-body">
+                            <h5 class="card-title">St. Xavier's College, Kolkata</h5>
+                            <p class="card-text">I am currently pursuing my BSc in Computer Science from here. I will graduate in June '21</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Hons. in Computer Science</li>
+                            <li class="list-group-item">Average SGPA 7.32</li>
+                            <li class="list-group-item">Working on Bit Level Encryption under <a href="https://www.sxccal.edu/wp-content/uploads/2020/02/AsokeNath.pdf">Dr. Asoke Nath</a></li>
+                            <li class="list-group-item">Members of Xaverian Astronomical Society(XAS), AICUF and NSS</li>
+                        </ul>
+                        <!-- <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://directory.edugorilla.com/wp-content/uploads/sites/6/2018/06/2730fb21517fd50cc8dc9bbaf1b2e54c-1024x768.jpeg" class="card-img-top" alt="image of Kalyani Public School">
+                        <div class="card-body">
+                            <h5 class="card-title">Kalyani Public School, Barasat</h5>
+                            <p class="card-text">I completed my classes XI and XII education from here. I graduated from XIIth grade in 2018.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Group : Science</li>
+                            <li class="list-group-item">CBSE (Class XII) : 94.2%</li>
+                            <li class="list-group-item">Attended a week's seminar of JBNSTS for scoring in the top 1% of class X examination</li>
+                        </ul>
+                        <!-- <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://tinyurl.com/yyzgruua" class="card-img-top" alt="image of St. Claret School">
+                        <div class="card-body">
+                            <h5 class="card-title">St. Claret School, Barrackpore</h5>
+                            <p class="card-text">I completed middle schooling from here. I graduated from Xth grade in 2016.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ICSE (Class X) : 96%</li>
+                            <li class="list-group-item">Position of Responsibility : Head Girl from 2015-2016</li>
+                            <li class="list-group-item">Ex member of <a href="https://tinyurl.com/yxnhdwey">Mission Mankind</a> and other related clubs / activities of the institution. </li>
+                            <li class="list-group-item">Participated in the Frank Anthony Memorial Debate Competition in 2015.</li>
+                        </ul>
+                        <!-- <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- work experience -->
+            <div class="row">
+                <h2>work experience</h2>
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="card text-white bg-dark" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="bhumi ngo">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development Intern, Bhumi NGO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

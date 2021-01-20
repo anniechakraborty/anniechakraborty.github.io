@@ -1,55 +1,35 @@
-body {
-    overflow: visible;
-}
-
-.bg-video-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-
-.bg-video {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+#background-image {
+    background-image: url("imgs/background-turtle.png");
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-size: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    object-fit: cover;
+    opacity: 0.6;
+    position: absolute;
 }
 
-header {
+#heading,
+.introduction {
+    animation: load-up 700ms ease-out;
     position: relative;
 }
 
-#about {
-    background-color: rgba(0, 0, 0, 0.22);
+#heading {
+    font-size: 100px;
+}
+
+h2 {
+    animation: load-up 1700ms ease-in-out;
+    font-size: 70px;
     position: relative;
-    width: 70%;
-    height: 70%;
-    border-radius: 10px;
-    top: 10%;
-    left: 12%;
-    -webkit-box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 14px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    color: #222;
 }
 
-@media screen and (min-width: 320px) {
-    p #about {
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (min-width: 1204px) {
-    p #about {
-        font-size: 1.5em;
-    }
-    h1 {
-        font-size: 100px;
-    }
+.card {
+    animation: load-up 2000ms ease-out;
+    box-shadow: 10px 10px 17px 1px rgba(18, 15, 15, 0.63);
+    -webkit-box-shadow: 10px 10px 17px 1px rgba(18, 15, 15, 0.63);
+    -moz-box-shadow: 10px 10px 17px 1px rgba(18, 15, 15, 0.63);
 }

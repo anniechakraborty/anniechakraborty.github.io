@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 1.2em;
 }
 
@@ -22,20 +22,22 @@ body {
 }
 
 
-/* @keyframes nav-loading {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-} */
-
-
 /* applicable for all headings */
 
 h1 {
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+
+/* Animations */
+
+@keyframes load-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
