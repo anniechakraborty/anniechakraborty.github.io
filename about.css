@@ -8,6 +8,26 @@ body {
 
 #heading {
     font-size: 80px;
+    color: aquamarine;
+}
+
+.introduction {
+    font-family: monospace;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.introduction span {
+    color: aquamarine;
+    transition-property: rotate();
+    transition-duration: 500ms;
+}
+
+.introduction span:hover,
+.introduction span:focus {
+    transform: rotateZ(360deg);
+    font-weight: bold;
+    font-size: 3.5em;
 }
 
 h2 {
@@ -15,6 +35,7 @@ h2 {
     position: relative;
     font-family: 'Comfortaa', cursive;
     font-weight: 400;
+    color: aquamarine;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
