@@ -1,0 +1,19 @@
+body {
+    background-color: #3586ff;
+}
+
+#one {
+    color: #fff;
+}
+
+#one h3 {
+    font-family: 'Pacifico', cursive;
+}
+
+#one p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer h4 {
+    font-family: 'Montserrat', sans-serif;
+}
