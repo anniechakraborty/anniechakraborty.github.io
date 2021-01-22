@@ -2,7 +2,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: #222;
+    background-color: rgb(34, 34, 34);
     color: aliceblue;
 }
 
@@ -50,10 +50,4 @@ h4 {
     box-shadow: 10px 10px 17px 1px rgba(18, 15, 15, 0.63);
     -webkit-box-shadow: 10px 10px 17px 1px rgba(18, 15, 15, 0.63);
     -moz-box-shadow: 10px 10px 17px 1px rgba(18, 15, 15, 0.63);
-}
-
-.spacer {
-    height: 100px;
-    width: 100%;
-    /* background-color: white; */
 }
