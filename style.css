@@ -31,6 +31,44 @@ h1 {
 }
 
 
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: rgba(168, 192, 212, 0.281);
+    padding: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+
+footer a:hover {
+    color: aquamarine;
+}
+
+footer p {
+    font-family: Comfortaa;
+    font-weight: 400;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li {
+    margin-right: 2em;
+}
+
+
 /* Animations */
 
 @keyframes load-up {
