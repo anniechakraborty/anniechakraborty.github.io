@@ -20,6 +20,16 @@ main {
     color: #fff;
 }
 
+.decorate {
+    color: aquamarine;
+    font-size: 100px;
+    transition: font-size .5s ease;
+}
+
+.decorate:hover {
+    font-size: 130px;
+}
+
 #clipped {
     height: 100%;
     width: 100%;
