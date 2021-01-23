@@ -127,22 +127,12 @@ footer a {
 
 footer a:hover {
     color: rgb(25, 63, 51);
+    background-color: beige;
 }
 
 footer p {
     font-family: 'Pacifico', cursive;
     font-weight: 400;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer ul li {
-    margin-right: 2em;
 }
 
 

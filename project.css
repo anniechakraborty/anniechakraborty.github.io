@@ -6,10 +6,6 @@ body {
     color: #fff;
 }
 
-#one h3 {
-    font-family: 'Pacifico', cursive;
-}
-
 footer h4 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -46,4 +42,8 @@ footer h4 {
 .projects:hover .text {
     opacity: 1;
     font-family: 'Montserrat', sans-serif;
+}
+
+.projects .text h3 {
+    font-family: 'Pacifico', cursive;
 }
