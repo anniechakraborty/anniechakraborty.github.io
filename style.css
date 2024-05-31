@@ -1,0 +1,154 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #007BFF;
+}
+
+[data-theme="dark"] {
+    --background-color: #1c1c1c;
+    --text-color: #ffffff;
+    --accent-color: #00d1b2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 1s;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+    animation: fadeIn 1s;
+}
+
+.container {
+    width: 80%;
+    margin: 2em auto;
+    max-width: 1000px;
+}
+
+.section {
+    margin-bottom: 2em;
+}
+
+.section h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5em;
+    font-size: 1.8em;
+    animation: slideInLeft 0.5s;
+}
+
+.section .title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section p,
+.section ul {
+    margin: 0.5em 0;
+    font-size: 1em;
+    animation: fadeIn 0.5s;
+}
+
+.section ul {
+    /* list-style: none; */
+    margin-left: 1em;
+    padding-left: 0;
+}
+
+.section ul li {
+    margin-bottom: 0.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid var(--accent-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+button {
+    background: none;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    .section p,
+    .section ul {
+        font-size: 0.9em;
+    }
+}
