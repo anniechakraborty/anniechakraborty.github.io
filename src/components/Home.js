@@ -1,6 +1,7 @@
 import React from "react";
 import "./../styles/Home.css";
 function HomeComponent() {
+    // TODO: add an animated flower in the right
   return (
     <div className="homeContainer">
       <h1 className="introHeader">
