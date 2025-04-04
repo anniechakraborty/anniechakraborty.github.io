@@ -9,9 +9,10 @@ function App() {
   return (
       <div className="App">
         <NavigationComponent />
-        <header className="App-header">
-          <HomeComponent />
-        </header>
+        <HomeComponent />
+        {/* <header className="App-header">
+          
+        </header> */}
       </div>     
   );
 }

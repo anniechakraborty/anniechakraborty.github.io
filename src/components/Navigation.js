@@ -18,9 +18,10 @@ function NavigationComponent() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-
+      
+      {/* TODO: Make it collapse properly in mobile view*/}
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
+        {/* <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <a className="nav-link" href="#">
               Home <span class="sr-only">(current)</span>
@@ -31,7 +32,10 @@ function NavigationComponent() {
               Link
             </a>
           </li>
-        </ul>
+        </ul> */}
+
+        {/* Right menu */}
+        {/* links to linkedin, medium, book blog*/}
       </div>
     </nav>
   );
