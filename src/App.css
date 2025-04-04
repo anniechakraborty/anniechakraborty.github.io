@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #B3C3CF;
   color: black;
+  padding-left: 2em;
 }
 
 /* .App-logo {
@@ -15,7 +16,7 @@
   }
 } */
 
-.App-header {
+/* .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +36,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

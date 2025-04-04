@@ -2,7 +2,7 @@ import React from "react";
 import './../styles/Navigation.css'
 function NavigationComponent() {
   return (
-    <nav className="navbar navbar-expand-lg container">
+    <nav className="navbar navbar-expand-lg">
       <a className="navbar-brand" href="#">
         Annie
       </a>
