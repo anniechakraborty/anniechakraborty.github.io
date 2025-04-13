@@ -1,41 +1,33 @@
-import React from "react";
-import './../styles/Navigation.css'
+import React, { useState } from "react";
+import "./../styles/Navigation.css";
+import { Link } from "react-router-dom";
+
 function NavigationComponent() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <nav className="navbar navbar-expand-lg">
-      <a className="navbar-brand" href="#">
+      <Link to="/" className="navbar-brand">
         Annie
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        onClick={()=> {console.log('clicked!!')}}
-      >
-        <span className="navbar-toggler-icon"></span>
+      </Link>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
       </button>
-      
-      {/* TODO: Make it collapse properly in mobile view*/}
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        {/* <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Link
-            </a>
-          </li>
-        </ul> */}
-
-        {/* Right menu */}
-        {/* links to linkedin, medium, book blog*/}
+      <div className={`nav-links ${isOpen ? "active" : ""}`}>
+      <Link to="/work" onClick={() => setIsOpen(false)}>
+          Work
+        </Link>
+        <Link to="/education" onClick={() => setIsOpen(false)}>
+          Education
+        </Link>
+        <Link to="/projects" onClick={() => setIsOpen(false)}>
+          Projects
+        </Link>
+        <Link to="/blog" onClick={() => setIsOpen(false)}>
+          Blog
+        </Link>
       </div>
     </nav>
   );
