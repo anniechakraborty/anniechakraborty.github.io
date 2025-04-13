@@ -1,9 +1,8 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 export default function WorkExperience() {
   return (
     <div className="workExpCard">
-      <h2>Experience</h2>
       {/* loop through every company */}
       <div className="experience">
         <div className="left">
