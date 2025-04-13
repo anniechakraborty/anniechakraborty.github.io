@@ -21,6 +21,8 @@ export default function Blog() {
     fetchMediumPosts();
   }, []);
 
+  const stripHtml = (html) => html.replace(/<[^>]*>/g, ' ');
+
   return (
     <div className="blogContainer">
       {posts.map((post, index) => (
@@ -32,12 +34,12 @@ export default function Blog() {
           {post.summary && (
             <p className="summary">
               {post.summary.length > 500
-                ? post.summary.slice(0, 500) + "..."
-                : post.summary}
+                ? stripHtml(post.summary.slice(0, 500)) + "..."
+                : stripHtml(post.summary)}
             </p>
           )}
           <a href={post.link} target="_blank" rel="noopener noreferrer">
-            Show More
+            Read More
           </a>
         </div>
       ))}

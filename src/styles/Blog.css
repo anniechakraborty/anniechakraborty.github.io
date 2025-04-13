@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 1.2em 0;
+    margin: 1.3em 0;
 }
 
 h3{
@@ -22,16 +22,19 @@ h3{
     font-style: normal;
     text-align: left;
     text-wrap: wrap;
-    font-size: 2em;
+    font-size: 2.1em;
 }
 
-.publishedDate, .summary{
+.publishedDate, .summary, a{
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.1em;
     text-align: left;
     text-wrap: wrap;
+    color: black;
+}
 
+.summary{
+    font-size: 1.2em;
 }
