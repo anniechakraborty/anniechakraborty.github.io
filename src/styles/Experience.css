@@ -1,0 +1,52 @@
+.workExpCard{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: start;
+    width: 60%;
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    text-wrap: wrap;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.experience{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 1.2em 0;
+}
+
+.left, .right{
+    width: 50%;
+}
+
+.title, .duration{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    text-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.title{
+    font-size: 1.3em;
+}
+
+.description{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: left;
+}
