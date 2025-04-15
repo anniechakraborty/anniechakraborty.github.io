@@ -1,0 +1,39 @@
+.footer{
+    min-height: 60vh;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.about, .contact {
+    /* Text styles */
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.1em;
+    text-align: left;
+
+    /* Size */
+    width: 60%;
+    text-wrap: wrap;
+
+    /* Position */
+    margin: 4em 0;
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: left;
+    text-wrap: wrap;
+    font-size: 3em;
+}
+
+.contact a, h2{
+    text-decoration: underline;
+    font-weight: 200;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    color: #000;
+}

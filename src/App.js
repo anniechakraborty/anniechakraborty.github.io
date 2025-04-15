@@ -8,6 +8,7 @@ import NavigationComponent from "./components/Navigation";
 import WorkExperience from "./components/WorkExperience";
 import Blog from "./components/Blog";
 import Education from "./components/Education";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       {/* <WorkExperience />
       <Education />
       <Blog /> */}
+      <Footer />
     </div>
   );
 }
