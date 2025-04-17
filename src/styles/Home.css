@@ -41,3 +41,13 @@
     /* Position */
     margin: 4em 0;
 }
+
+@media screen and (max-width: 890px) {
+    .introHeader{
+        font-size: 1.9em;
+    }
+
+    .about{
+        font-size: 1.1em;
+    }
+}

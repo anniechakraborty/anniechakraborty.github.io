@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 3em;
+    position: sticky;
+    z-index: 2;
 }
 
 .navbar-brand {
@@ -55,8 +57,8 @@
         position: absolute;
         top: 100%;
         left: 0;
-        right: 0;
-        background: #fff;
+        right: 10px;
+        background: aliceblue;
         padding: 1rem;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }

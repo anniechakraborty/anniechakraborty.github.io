@@ -18,7 +18,7 @@
     text-wrap: wrap;
 
     /* Position */
-    margin: 1em 0;
+    margin: 1.5em 0;
 }
 
 h2{
@@ -28,6 +28,7 @@ h2{
     text-align: left;
     text-wrap: wrap;
     font-size: 3em;
+    margin-bottom: 0;
 }
 
 .contact a, h2{
@@ -45,4 +46,14 @@ h2{
 .contact a:hover {
     color: #0073b1;
     /* LinkedIn blue ;) */
+}
+
+@media screen and (max-width: 890px) {
+    h2{
+        font-size: 2em;
+    }
+
+    .about, .contact{
+        font-size: 1.3em;
+    }
 }

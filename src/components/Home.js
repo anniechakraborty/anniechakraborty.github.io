@@ -18,9 +18,12 @@ function HomeComponent() {
         environments. Fluent in English and a little German, with excellent
         communication and interpersonal skills.
       </p>
+      <p className="about">
+        My skills lie in 
+      </p>
 
-      <WorkExperience />
-      <Education />
+      {/* <WorkExperience />
+      <Education /> */}
     </div>
   );
 }

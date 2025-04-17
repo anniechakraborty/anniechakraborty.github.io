@@ -43,6 +43,10 @@ h2{
     .left{
         width: 100%;
     }
+
+    h2{
+        font-size: 2em;
+    }
 }
 
 .title, .duration{
