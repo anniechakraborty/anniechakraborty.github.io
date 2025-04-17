@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import "./../styles/Blog.css";
+import "./../styles/BlogProjects.css";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -25,6 +25,7 @@ export default function Blog() {
 
   return (
     <div className="blogContainer">
+      <h2>Blog</h2>
       {posts.map((post, index) => (
         <div key={index} className="postCard">
           <h3>{post.title}</h3>
