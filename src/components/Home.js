@@ -4,7 +4,7 @@ import "./../styles/Home.css";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education";
 function HomeComponent() {
-    // TODO: add an animated flower in the right
+  // TODO: add an animated flower in the right
   return (
     <div className="homeContainer">
       <h1 className="introHeader">
@@ -13,10 +13,10 @@ function HomeComponent() {
         she is specialising in <em>Machine Learning</em> and <em>GenAI</em>.
       </h1>
       <p className="about">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Results-driven professional with a strong background in technology, a
+        passion for solving complex problems and excels in collaborative
+        environments. Fluent in English and a little German, with excellent
+        communication and interpersonal skills.
       </p>
 
       <WorkExperience />

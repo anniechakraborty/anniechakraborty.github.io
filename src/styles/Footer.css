@@ -18,7 +18,7 @@
     text-wrap: wrap;
 
     /* Position */
-    margin: 4em 0;
+    margin: 1em 0;
 }
 
 h2{
@@ -36,4 +36,13 @@ h2{
     text-decoration-thickness: 1px;
     text-underline-offset: 7px;
     color: #000;
+}
+
+.contact a{
+    transition: color 0.2s ease;
+}
+
+.contact a:hover {
+    color: #0073b1;
+    /* LinkedIn blue ;) */
 }
