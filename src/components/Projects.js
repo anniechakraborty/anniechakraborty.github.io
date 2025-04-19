@@ -15,7 +15,7 @@ export default function Projects() {
         </p>
         <div className="buttons">
           <a
-            href="https://github.com/anniechakraborty/anniechakraborty.github.io"
+            href="https://anniechakraborty.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
