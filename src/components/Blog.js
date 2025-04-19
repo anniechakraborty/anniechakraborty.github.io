@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import LoadingSpinner from "./Spinner";
 
 import "./../styles/BlogProjects.css";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchMediumPosts = async () => {
-      try {
-        const res = await axios.get("http://localhost:5000/api/medium-posts");
-        console.log(res.data);
-        setPosts(res.data);
-      } catch (err) {
-        console.error("Error fetching posts data:", err);
-      } finally {
-      }
+      fetch("https://personalwebsitebackend-1772.onrender.com/api/medium-posts")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      setPosts(data);
+      setLoading(false);
+    });
     };
 
     fetchMediumPosts();
   }, []);
 
   const stripHtml = (html) => html.replace(/<[^>]*>/g, ' ');
+
+  if (loading) return <LoadingSpinner />;
 
   return (
     <div className="blogContainer">

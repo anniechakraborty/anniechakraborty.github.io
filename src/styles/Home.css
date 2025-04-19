@@ -42,12 +42,26 @@
     margin: 4em 0;
 }
 
+.fly_up_text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: flyUp 1.5s ease-out forwards;
+}
+
+@keyframes flyUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 @media screen and (max-width: 890px) {
-    .introHeader{
+    .introHeader {
         font-size: 1.9em;
     }
 
-    .about{
+    .about {
         font-size: 1.1em;
     }
 }

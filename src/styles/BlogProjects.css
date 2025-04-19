@@ -35,11 +35,18 @@ h3{
     color: black;
 }
 
-.summary{
+.summary, .summary a{
     font-size: 1.2em;
+    text-decoration: none;
 }
 
-.blogContainer a {
+.buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a, .blogContainer a {
     transition: color 0.2s ease;
     /* Font properties*/
     font-family: "EB Garamond", serif;
@@ -53,7 +60,7 @@ h3{
     text-underline-offset: 4px;
 }
 
-.blogContainer a:hover {
+.buttons a:hover, .blogContainer a:hover {
     color: #0073b1;
     /* LinkedIn blue ;) */
 }
