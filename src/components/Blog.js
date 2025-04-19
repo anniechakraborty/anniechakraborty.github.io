@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import LoadingSpinner from "./Spinner";
 
 import "./../styles/BlogProjects.css";

@@ -1,8 +1,5 @@
 import React from "react";
 import "./../styles/Home.css";
-
-import WorkExperience from "./WorkExperience";
-import Education from "./Education";
 function HomeComponent() {
   // TODO: add an animated flower in the right
   return (

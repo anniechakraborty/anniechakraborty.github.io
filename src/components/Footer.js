@@ -9,11 +9,11 @@ export default function Footer(){
             </div>
             <h2>Get in touch &#8594;</h2>
             <div className="contact">
-                <a href="mailto:chakrabortyannie20@gmail.com" target="_blank">Email</a> 
-                 / <a href={'https://www.linkedin.com/in/annie-chakraborty/'} target="_blank">LinkedIn</a>
-                 / <a href={'https://github.com/anniechakraborty'} target="_blank">GitHub</a> 
-                 / <a href={'https://medium.com/@annie.chakraborty'} target="_blank">Blog</a>
-                  / <a href={'https://www.instagram.com/tinybookishreviews/#'} target="_blank">Instagram</a>
+                <a href="mailto:chakrabortyannie20@gmail.com" target="_blank" rel="noopener noreferrer">Email</a> 
+                 / <a href={'https://www.linkedin.com/in/annie-chakraborty/'} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                 / <a href={'https://github.com/anniechakraborty'} target="_blank" rel="noopener noreferrer">GitHub</a> 
+                 / <a href={'https://medium.com/@annie.chakraborty'} target="_blank" rel="noopener noreferrer">Blog</a>
+                  / <a href={'https://www.instagram.com/tinybookishreviews/#'} target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
             <div className="about my-3">
             Made with &#9829; | React and Flask
