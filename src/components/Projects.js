@@ -3,7 +3,7 @@ import "./../styles/BlogProjects.css";
 
 export default function Projects() {
   return (
-    <div className="blogContainer">
+    <div className="blogContainer fly_up_text">
       <h2>Projects</h2>
       <div className="postCard">
         <h3>Personal Website</h3>
@@ -29,7 +29,7 @@ export default function Projects() {
             View Project (React)
           </a>
           <a
-            href="https://github.com/anniechakraborty/anniechakraborty.github.io"
+            href="https://github.com/anniechakraborty/PersonalWebsiteBackend"
             target="_blank"
             rel="noopener noreferrer"
           >

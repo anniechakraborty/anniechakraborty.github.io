@@ -79,6 +79,19 @@ h2{
     color: #000;
 }
 
+.fly_up_text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: flyUp 1.5s ease-out forwards;
+}
+
+@keyframes flyUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width: 890px) {
     h2{
         font-size: 2em;
@@ -90,5 +103,19 @@ h2{
 
     .summary, .publishedDate, .blogContainer a{
         font-size: 1.1em;
+    }
+
+    .buttons{
+        width: 100%;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .buttons{
+        width: 100%;
+        flex-direction: column;
+        gap: 4px;
     }
 }

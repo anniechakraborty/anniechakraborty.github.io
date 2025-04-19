@@ -1,4 +1,4 @@
-.workExpCard{
+.workExpCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
     min-height: 90vh;
 }
 
-h2{
+h2 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -19,7 +19,7 @@ h2{
     font-size: 3em;
 }
 
-.experience{
+.experience {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -27,29 +27,32 @@ h2{
     margin: 1.2em 0;
 }
 
-.left, .right{
+.left,
+.right {
     width: 50%;
 }
 
 @media screen and (max-width: 890px) {
-    .experience{
+    .experience {
         flex-direction: column;
     }
 
-    .right{
+    .right {
         margin-top: 1em;
         width: 100%;
     }
-    .left{
+
+    .left {
         width: 100%;
     }
 
-    h2{
+    h2 {
         font-size: 2em;
     }
 }
 
-.title, .duration{
+.title,
+.duration {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -59,16 +62,29 @@ h2{
     margin-bottom: 0;
 }
 
-.title{
+.title {
     font-size: 1.3em;
     width: 80%;
 }
 
-.description{
+.description {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-size: 1.1em;
     text-align: left;
+}
+
+.fly-up-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: flyUp 1.5s ease-out forwards;
+}
+
+@keyframes flyUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

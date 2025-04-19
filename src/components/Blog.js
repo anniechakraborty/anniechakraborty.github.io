@@ -28,9 +28,9 @@ export default function Blog() {
 
   return (
     <div className="blogContainer">
-      <h2>Blog</h2>
+      <h2 className="fly_up_text">Blog</h2>
       {posts.map((post, index) => (
-        <div key={index} className="postCard">
+        <div key={index} className="postCard fly_up_text">
           <h3>{post.title}</h3>
           <p className="publishedDate">
             {new Date(post.published).toLocaleDateString()}

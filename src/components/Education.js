@@ -3,7 +3,7 @@ import "./../styles/Experience.css";
 
 export default function Education() {
   return (
-    <div className="workExpCard">
+    <div className="workExpCard fly_up_text">
       <h2>Education</h2>
       <div className="experience">
         <div className="left">
