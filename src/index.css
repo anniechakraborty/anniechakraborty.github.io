@@ -1,19 +1,161 @@
+@import 'tailwindcss';
+
+/*
+ * Colour tokens. Each becomes a Tailwind colour (e.g. --color-muted → text-muted, bg-muted).
+ * These are the dark-mode values; light mode overrides them below.
+ */
+@theme {
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+
+  --color-bg: #080808;          /* page background */
+  --color-surface: #0d0d0d;     /* cards, terminal, drawer */
+  --color-surface-2: #111111;   /* tooltips */
+
+  --color-line-faint: #111111;  /* section dividers */
+  --color-line: #1a1a1a;        /* default borders */
+  --color-line-strong: #262626; /* tags, hovered borders */
+  --color-line-hover: #333333;
+
+  --color-fg: #e8e8e8;          /* headings */
+  --color-fg-soft: #aaaaaa;
+  --color-muted: #888888;       /* body text */
+  --color-subtle: #666666;      /* secondary text */
+  --color-faint: #444444;       /* labels, numbering */
+
+  --color-accent: #00ff88;
+  --color-accent-hover: #00cc6a;
+  --color-on-accent: #080808;   /* text on an accent background */
+  --color-danger: #ff4444;
+  --color-warn: #ffcc00;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Light mode: set by the toggle in the nav, via <html data-theme="light"> */
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --color-bg: #fafaf7;
+  --color-surface: #ffffff;
+  --color-surface-2: #ffffff;
+
+  --color-line-faint: #ecebe6;
+  --color-line: #e2e1dc;
+  --color-line-strong: #d4d3cd;
+  --color-line-hover: #b9b8b2;
+
+  --color-fg: #16161a;
+  --color-fg-soft: #33333a;
+  --color-muted: #52525b;
+  --color-subtle: #6b6b73;
+  --color-faint: #8a8a92;
+
+  /* #00ff88 is unreadable on white, so light mode uses a deeper green */
+  --color-accent: #007a52;
+  --color-accent-hover: #006644;
+  --color-on-accent: #ffffff;
+  --color-danger: #d92d2d;
+  --color-warn: #d9a300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line-hover);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
 }
 
-html{
-  margin: 0;
-  padding: 0;
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease both;
+}
+
+/* `both` keeps the element hidden during animation-delay, so it doesn't flash before fading in. */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease both;
+}
+
+.section-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-enter.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
