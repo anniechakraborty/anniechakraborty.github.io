@@ -190,7 +190,7 @@ export const PROJECTS: Project[] = [
     longDesc:
       'Implemented QA baselines with binary questions and multiple-choice questions (with generated distractors) to evaluate model reasoning. Developed a two-stage training process, Supervised Fine-tuning(SFT) followed by Reinforcement Learning with Verifiable Rewards (RLVR), to safely update model parameters and improve reasoning correctness and faithfulness. Evaluated models on their direct entailment generation capabilities with intermediary proof traces.',
     tags: ['LLMs', 'Symbolic Reasoning', 'OWL/RDF', 'SFT', 'RLVR'],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/anniechakraborty/proof_guided_reasoning_for_llms' }],
+    links: [{ label: 'View the code (GitHub)', href: 'https://github.com/anniechakraborty/proof_guided_reasoning_for_llms' }],
   },
   {
     id: '02',
@@ -200,7 +200,7 @@ export const PROJECTS: Project[] = [
     longDesc:
       'Produces market assessments and investor-style venture recommendations from academic papers. Fine-tuned a Pioneer GLiNER2 model on synthetic data to classify commercialisation bottlenecks, and used Gemini and Tavily for competitor analysis, market sizing, funding research, regulatory assessment and partnership discovery. Parallel agent execution cut workflow latency.',
     tags: ['Agentic AI', 'Gemini', 'Tavily', 'Flask', 'React'],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/tuanady/Tech-AI-Hackhatlon' }],
+    links: [{ label: 'View the code (GitHub)', href: 'https://github.com/tuanady/Tech-AI-Hackhatlon' }],
   },
   {
     id: '03',
@@ -210,7 +210,7 @@ export const PROJECTS: Project[] = [
     longDesc:
       'Curated datasets from liver cancer research publications and targeted QA pairs for liver diseases, then addressed the static knowledge limits of LLMs through domain adaptation and retrieval-augmented generation (RAG).',
     tags: ['LLMs', 'Continual Learning', 'Fine-Tuning', 'RAG'],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/Rajarshi20/Liver-LLM' }],
+    links: [{ label: 'View the code (GitHub)', href: 'https://github.com/Rajarshi20/Liver-LLM' }],
   },
   {
     id: '04',
@@ -220,7 +220,10 @@ export const PROJECTS: Project[] = [
     longDesc:
       'Scrapes and processes job postings, reads the user\'s documents (CVs, cover letters), and uses LLMs to customise them to align with the job description, streamlining the application process end to end.',
     tags: ['LLMs', 'Groq', 'Web Scraping', 'Flask', 'React'],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/raihhann/Job_Hunter_VERCEL_EVENT' }],
+    links: [
+      { label: 'View the app', href: 'https://jobhuntct.netlify.app/' },
+      { label: 'View the code (GitHub)', href: 'https://github.com/raihhann/Job_Hunter_VERCEL_EVENT' },
+    ],
   },
   {
     id: '05',
@@ -231,8 +234,8 @@ export const PROJECTS: Project[] = [
       'This is an Angular-based Kanban Board application that allows users to create, manage, and track tasks. The application uses Reactive Forms for user input, integrates API data for task retrieval and updates, implements user authentication and authorization, and route protection using authGuard. The backend of this application is written using Python\'s Flask framework, and the database is implemented using MongoDB. We have used RestAPIs to implement all the CRUD operations.',
     tags: ['Angular', 'Flask', 'MongoDB', 'REST APIs'],
     links: [
-      { label: 'Frontend', href: 'https://github.com/anniechakraborty/simpleKanbanBoard' },
-      { label: 'Backend', href: 'https://github.com/anniechakraborty/simpleKanbanBackend' },
+      { label: 'View the frontend (GitHub)', href: 'https://github.com/anniechakraborty/simpleKanbanBoard' },
+      { label: 'View the backend (GitHub)', href: 'https://github.com/anniechakraborty/simpleKanbanBackend' },
     ],
   },
   {
@@ -269,8 +272,8 @@ export const PROJECTS: Project[] = [
       'Rebuilt with React, Vite, TypeScript and Tailwind CSS. A small Flask backend hosted on Render fetches my Medium feed, and the frontend is hosted on Netlify.',
     tags: ['React', 'TypeScript', 'Tailwind', 'Flask'],
     links: [
-      { label: 'Code (React)', href: 'https://github.com/anniechakraborty/anniechakraborty.github.io' },
-      { label: 'Code (Flask)', href: 'https://github.com/anniechakraborty/PersonalWebsiteBackend' },
+      { label: 'View the frontend (GitHub)', href: 'https://github.com/anniechakraborty/anniechakraborty.github.io' },
+      { label: 'View the backend (GitHub)', href: 'https://github.com/anniechakraborty/PersonalWebsiteBackend' },
     ],
   },
   {
@@ -281,7 +284,7 @@ export const PROJECTS: Project[] = [
     longDesc:
       "Aims to streamline book discovery by leveraging MongoDB's Full-Text Search, then compares it with PostgreSQL on query execution efficiency and the complexity of searches each supports.",
     tags: ['Python', 'XML', 'XSLT', 'MongoDB', 'PostgreSQL'],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/anniechakraborty/BookQuest' }],
+    links: [{ label: 'View the code (GitHub)', href: 'https://github.com/anniechakraborty/BookQuest' }],
   },
   {
     id: '10',
